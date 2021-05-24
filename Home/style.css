@@ -62,16 +62,44 @@
 
 .ImagesDiv {
   border: 5px outset #4267B2;
-  background-color: #DCDCDC;    
+  background-color: #E8E8E8;    
   text-align: center;
+  width: auto;
+  height: 400px;
+  
 }
 .VideosDiv {
   border: 5px outset #4267B2;
-  background-color: #DCDCDC;    
+  background-color: #E8E8E8;    
   text-align: center;
+
 }
 .AudiosDiv {
   border: 5px outset #4267B2;
-  background-color: #DCDCDC;    
+  background-color: #E8E8E8;    
   text-align: center;
+}
+/*for images gallery*/
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+h1{
+ 
 }
