@@ -33,13 +33,34 @@
 <div id="images">
 </div>
 
+ <form action="#" method="POST" class="signupForm" name="signupform">
+    <h2>Add new image</h2>
+    <ul class="noBullet">
+      <li>
+        <label for="username"></label>
+        <input type="text" class="inputFields" id="srcImage" name="username" placeholder="Image source" value="" />
+        <!-- oninput="return userNameValidation(this.value)" required/> -->
+      </li>
+      <li>
+        <label for="username"></label>
+        <input type="text" class="inputFields" id="categoryImage" name="password" placeholder="Category" />
+      </li>
+      <li>
+        <label for="username"></label>
+        <input type="text" class="inputFields" id="description" name="email" placeholder="description" value="" required/>
+      </li>
+      <li id="center-btn">
+        <input type="submit" id="join-btn" name="join" alt="Join" value="Add">
+      </li>
+    </ul>
+  </form>
 
 
 
 
 
 
-<footer>Copyrights 2021</footer>
+<!-- <footer>Copyrights 2021</footer> -->
 <script src="main.js"></script>
 </body>
 

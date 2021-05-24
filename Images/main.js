@@ -74,7 +74,25 @@ function renderImages(){
 	}
 	$("#images").show();
 }
+function addButton(event){
+	event.preventDefault();
+	var image={}
+	image["src"]=$("#srcImage").val()
+	image["description"]=$("#decription").val()
+	image['category']=$("#categoryImage").val()
+	
+	images.push(image);
+	//console.log(books)
+	//setMyStockage();
+	renderImages();
+	
+     
+	return;
+	
+	
+}
 
+$('#add').click(addButton)
 
 renderImages();
 
