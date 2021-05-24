@@ -61,21 +61,22 @@
 }
 
 .ImagesDiv {
-  border: 5px outset #4267B2;
+  border: 5px outset; /*#4267B2;*/
   background-color: #E8E8E8;    
   text-align: center;
   width: auto;
-  height: 400px;
+  height: 350px;
   
 }
 .VideosDiv {
-  border: 5px outset #4267B2;
+  border: 5px outset ;/*#4267B2;*/
   background-color: #E8E8E8;    
   text-align: center;
+  height: 350px;
 
 }
 .AudiosDiv {
-  border: 5px outset #4267B2;
+  border: 5px outset; /*#4267B2;*/
   background-color: #E8E8E8;    
   text-align: center;
 }
