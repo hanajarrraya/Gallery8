@@ -21,13 +21,13 @@
   <a href="C:\Users\ASUS\Documents\cohort14\Gallery8\Home\index.html">Home</a>
   
   
-  <a href="#about"> Images</a>
+  <a href="C:\Users\ASUS\Documents\cohort14\Gallery8\Images\index.html"> Images</a>
 
-  <a href="#about"> Videos</a>
+  <a href="C:\Users\ASUS\Documents\cohort14\Gallery8\Videos\index.html"> Videos</a>
 
-  <a href="#about"> Audios</a>
+  <a href="C:\Users\ASUS\Documents\cohort14\Gallery8\Audios\index.html"> Audios</a>
   
-  <a href="#about"> About</a>
+  <a href="C:\Users\ASUS\Documents\cohort14\Gallery8\About\index.html"> About</a>
 </div>
 
 <div id="images">
@@ -37,20 +37,28 @@
     <h2>Add new image</h2>
     <ul class="noBullet">
       <li>
-        <label for="username"></label>
-        <input type="text" class="inputFields" id="srcImage" name="username" placeholder="Image source" value="" />
+        <label ></label>
+        <input type="text" class="inputFields" id="srcImage" placeholder="Image source" value="" />
         <!-- oninput="return userNameValidation(this.value)" required/> -->
       </li>
       <li>
-        <label for="username"></label>
-        <input type="text" class="inputFields" id="categoryImage" name="password" placeholder="Category" />
+        <label ></label>
+        <!-- <input type="text" class="inputFields" id="categoryImage"  placeholder="Category" /> -->
+        <select   class="inputFields" placeholder="image catgory" id="categoryImage" >
+        <option value="choose">choose category</option>
+        <option value="nature">Nature</option>
+            <option value="romance">Romance</option>
+            <option value="monuments">Monuments</option>
+            <option value="babies">babies</option>
+   </select> 
       </li>
+
       <li>
-        <label for="username"></label>
-        <input type="text" class="inputFields" id="description" name="email" placeholder="description" value="" required/>
+        <label ></label>
+        <input type="text" class="inputFields" id="description"  placeholder="description" value="" required/>
       </li>
       <li id="center-btn">
-        <input type="submit" id="join-btn" name="join" alt="Join" value="Add">
+        <input type="submit" id="add-btn" name="join" alt="Join" value="Add">
       </li>
     </ul>
   </form>

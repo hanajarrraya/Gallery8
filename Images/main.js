@@ -33,10 +33,22 @@ category:"relax"},
 {src:"cardio.mp3",
 category:"sport"}
 ]
+function setMyStockage(){
+	console.log("I am in local storage setting images")
+	localStorage.setItem('images',JSON.stringify(images));
+	
+}
+function getMyStockage(){
+	
+	console.log("I am in local storage taking images")
+	images=JSON.parse(localStorage.getItem('images'))
+	
+	
+}
 var pathAudios="C:/Users/ASUS/Documents/cohort14/Gallery8/auds/"
 var counter=0;
 function createCard(image){
-console.log("I am in createCard")
+
 	
 	
 	$("#images").append('<div id=' + "image" + counter+' class="gallery"></div>')
@@ -67,7 +79,7 @@ function renderImages(){
 	
 	$("#images").html("")
 	
-    //getMyStockage();
+    getMyStockage();
     
 	for (var i =0;i<images.length;i++){ //7
 		createCard(images[i]);
@@ -78,12 +90,12 @@ function addButton(event){
 	event.preventDefault();
 	var image={}
 	image["src"]=$("#srcImage").val()
-	image["description"]=$("#decription").val()
+	image["description"]=$("#description").val()
 	image['category']=$("#categoryImage").val()
-	
+	console.log("image=",image)
 	images.push(image);
-	//console.log(books)
-	//setMyStockage();
+	
+	setMyStockage();
 	renderImages();
 	
      
@@ -92,7 +104,7 @@ function addButton(event){
 	
 }
 
-$('#add').click(addButton)
-
+$('#add-btn').click(addButton)
+//setMyStockage();
 renderImages();
 
