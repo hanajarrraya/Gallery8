@@ -105,6 +105,6 @@ function addButton(event){
 }
 
 $('#add-btn').click(addButton)
-//setMyStockage();
+
 renderImages();
 
