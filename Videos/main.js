@@ -12,7 +12,18 @@ category:"famous show"},
 description:"it is experience speaker",
 category:"TeDEX"}
 ]
-
+function setMyStockage(){
+	console.log("I am in local storage setting images")
+	localStorage.setItem('videos',JSON.stringify(videos));
+	
+}
+function getMyStockage(){
+	
+	console.log("I am in local storage taking images")
+	videos=JSON.parse(localStorage.getItem('videos'))
+	
+	
+}
 
 var counter=0;
 function createVideo(video){
@@ -44,7 +55,7 @@ function renderVideos(){
 	
 	$("#VideosDiv").html("")
 	
-    //getMyStockage();
+    getMyStockage();
     
 	for (var i =0;i<videos.length;i++){ //5
 		createVideo(videos[i]);
@@ -55,13 +66,13 @@ function addButton(event){
 	event.preventDefault();
 	var video={}
 	video["src"]=$("#srcVideo").val()
-	image["description"]=$("#description").val()
-	image['category']=$("#categoryImage").val()
-	console.log("image=",image)
-	images.push(image);
+	video["description"]=$("#description").val()
+	video['category']=$("#categoryVideo").val()
+	console.log("image=",video)
+	videos.push(video);
 	
 	setMyStockage();
-	renderImages();
+	renderVideos();
 	
      
 	return;
@@ -70,6 +81,6 @@ function addButton(event){
 }
 
 $('#add-btn').click(addButton)
-
+//setMyStockage();
 renderVideos();
 
